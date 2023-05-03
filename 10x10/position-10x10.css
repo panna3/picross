@@ -1,0 +1,43 @@
+BODY
+{
+	border: 0.05cm dotted #99CCFF;
+	font: 14px 'MS Sans Serif';
+	color:#787878;
+}
+a
+{
+	color:#003399;
+	
+}
+a:hover
+{
+	color:green;
+}
+TABLE, TD
+{
+	 border: 0.5mm solid #000099;
+}
+TD
+{
+    border-width:0.5mm;
+    background-color:#FFFFFF;
+    width:1cm;
+    height:1cm;
+	color:#000000;
+	font-size:16px;
+}
+TH
+{
+    border-top:0.5mm solid #FFFFFF;
+} 
+#top{border-color:#FFFFFF;}
+
+.intx1{border:0cm none #FFFFFF; font: bold 16px 'MS Sans Serif'; color:#787878; margin-left:3mm;width:1cm;}
+
+.x{margin-top:1cm;margin-left:5cm;font-size:20px;color:#787878;}
+.left{margin-top:1cm;margin-left:6cm;font-size:20px;color:#330099;}
+#left6{margin-top:1cm;margin-left:6.5cm;font-size:20px;color:#330099;}
+#left8{margin-top:1cm;margin-left:6cm;}
+
+#tl{font-size:0.7cm;}
+#endmsg{margin-top:1cm;margin-left:5cm;font-size:20px;color:#000000;}
