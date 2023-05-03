@@ -1,0 +1,438 @@
+<!--
+Author: Tamaki Komatsuzaki
+Date: March 7 2009.
+-->
+<html>
+<head>
+<title>Tamaki's Picross 15x15 1</title>
+<link rel="stylesheet" type="text/css" href="position-15x15.css" />
+<script type="text/javascript" src='cd15x15-1.js'></script>
+</head>
+<body onmousedown="whichElement(event);" onload="window_onload();" onmouseup="trackmouse(event);">
+
+<div id="tl"><center>Tamaki's Picross 15x15 1</center></div>
+<p></p>
+<center><span id="exp">Click to mark as solid and shift + click to mark as empty.<br />
+Click + move your mouse for multiple selection.
+</span></center>
+<span id="endmsg">SKI RACER</span>
+<table align="center" id="top">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+
+<th></th>
+<th></th>
+<th>1</th>
+<th></th>
+<th>1</th>
+<th>6</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+
+<th></th>
+<th></th>
+<th>3</th>
+<th>4</th>
+<th>7</th>
+<th>2</th>
+<th>7</th>
+<th>1</th>
+<th>2</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+
+<th>0</th>
+<th>2</th>
+<th>1</th>
+<th>6</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+<th>3</th>
+<th>2</th>
+<th>2</th>
+<th>1</th>
+<th>1</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+</tr>
+
+<tr>
+<td align="center" id="td1"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td2"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td3"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td4"><input type="text" value="0" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="a1"><span id="tx1">X</span></td>
+<td align="center" id="a2"><span id="tx2">X</span></td>
+<td align="center" id="a3"><span id="tx3">X</span></td>
+<td align="center" id="a4"><span id="tx4">X</span></td>
+<td align="center" id="a5"><span id="tx5">X</span></td>
+<td align="center" id="a6"><span id="tx36">X</span></td>
+<td align="center" id="a7"><span id="tx37">X</span></td>
+<td align="center" id="a8"><span id="tx38">X</span></td>
+<td align="center" id="a9"><span id="tx39">X</span></td>
+<td align="center" id="a10"><span id="tx40">X</span></td>
+<td align="center" id="a11"><span id="tx101">X</span></td>
+<td align="center" id="a12"><span id="tx102">X</span></td>
+<td align="center" id="a13"><span id="tx103">X</span></td>
+<td align="center" id="a14"><span id="tx104">X</span></td>
+<td align="center" id="a15"><span id="tx105">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td5"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td6"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td7"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td8"><input type="text" value="0" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="b1"><span id="tx6">X</span></td>
+<td align="center" id="b2"><span id="tx7">X</span></td>
+<td align="center" id="b3"><span id="tx8">X</span></td>
+<td align="center" id="b4"><span id="tx9">X</span></td>
+<td align="center" id="b5"><span id="tx10">X</span></td>
+<td align="center" id="b6"><span id="tx26">X</span></td>
+<td align="center" id="b7"><span id="tx27">X</span></td>
+<td align="center" id="b8"><span id="tx28">X</span></td>
+<td align="center" id="b9"><span id="tx29">X</span></td>
+<td align="center" id="b10"><span id="tx30">X</span></td>
+<td align="center" id="b11"><span id="tx106">X</span></td>
+<td align="center" id="b12"><span id="tx107">X</span></td>
+<td align="center" id="b13"><span id="tx108">X</span></td>
+<td align="center" id="b14"><span id="tx109">X</span></td>
+<td align="center" id="b15"><span id="tx110">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td9"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td10"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td11"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td12"><input type="text" value="2" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="c1"><span id="tx11">X</span></td>
+<td align="center" id="c2"><span id="tx12">X</span></td>
+<td align="center" id="c3"><span id="tx13">X</span></td>
+<td align="center" id="c4"><span id="tx14">X</span></td>
+<td align="center" id="c5"><span id="tx15">X</span></td>
+<td align="center" id="c6"><span id="tx31">X</span></td>
+<td align="center" id="c7"><span id="tx32">X</span></td>
+<td align="center" id="c8"><span id="tx33">X</span></td>
+<td align="center" id="c9"><span id="tx34">X</span></td>
+<td align="center" id="c10"><span id="tx35">X</span></td>
+<td align="center" id="c11"><span id="tx111">X</span></td>
+<td align="center" id="c12"><span id="tx112">X</span></td>
+<td align="center" id="c13"><span id="tx113">X</span></td>
+<td align="center" id="c14"><span id="tx114">X</span></td>
+<td align="center" id="c15"><span id="tx115">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td13"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td14"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td15"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td16"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="d1"><span id="tx16">X</span></td>
+<td align="center" id="d2"><span id="tx17">X</span></td>
+<td align="center" id="d3"><span id="tx18">X</span></td>
+<td align="center" id="d4"><span id="tx19">X</span></td>
+<td align="center" id="d5"><span id="tx20">X</span></td>
+<td align="center" id="d6"><span id="tx41">X</span></td>
+<td align="center" id="d7"><span id="tx42">X</span></td>
+<td align="center" id="d8"><span id="tx43">X</span></td>
+<td align="center" id="d9"><span id="tx44">X</span></td>
+<td align="center" id="d10"><span id="tx45">X</span></td>
+<td align="center" id="d11"><span id="tx116">X</span></td>
+<td align="center" id="d12"><span id="tx117">X</span></td>
+<td align="center" id="d13"><span id="tx118">X</span></td>
+<td align="center" id="d14"><span id="tx119">X</span></td>
+<td align="center" id="d15"><span id="tx120">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td17"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td18"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td19"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td20"><input type="text" value="3" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="e1"><span id="tx21">X</span></td>
+<td align="center" id="e2"><span id="tx22">X</span></td>
+<td align="center" id="e3"><span id="tx23">X</span></td>
+<td align="center" id="e4"><span id="tx24">X</span></td>
+<td align="center" id="e5"><span id="tx25">X</span></td>
+<td align="center" id="e6"><span id="tx46">X</span></td>
+<td align="center" id="e7"><span id="tx47">X</span></td>
+<td align="center" id="e8"><span id="tx48">X</span></td>
+<td align="center" id="e9"><span id="tx49">X</span></td>
+<td align="center" id="e10"><span id="tx50">X</span></td>
+<td align="center" id="e11"><span id="tx121">X</span></td>
+<td align="center" id="e12"><span id="tx122">X</span></td>
+<td align="center" id="e13"><span id="tx123">X</span></td>
+<td align="center" id="e14"><span id="tx124">X</span></td>
+<td align="center" id="e15"><span id="tx125">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td21"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td22"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td23"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td24"><input type="text" value="4" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="f1"><span id="tx51">X</span></td>
+<td align="center" id="f2"><span id="tx52">X</span></td>
+<td align="center" id="f3"><span id="tx53">X</span></td>
+<td align="center" id="f4"><span id="tx54">X</span></td>
+<td align="center" id="f5"><span id="tx55">X</span></td>
+<td align="center" id="f6"><span id="tx56">X</span></td>
+<td align="center" id="f7"><span id="tx57">X</span></td>
+<td align="center" id="f8"><span id="tx58">X</span></td>
+<td align="center" id="f9"><span id="tx59">X</span></td>
+<td align="center" id="f10"><span id="tx60">X</span></td>
+<td align="center" id="f11"><span id="tx126">X</span></td>
+<td align="center" id="f12"><span id="tx127">X</span></td>
+<td align="center" id="f13"><span id="tx128">X</span></td>
+<td align="center" id="f14"><span id="tx129">X</span></td>
+<td align="center" id="f15"><span id="tx130">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td25"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td26"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td27"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td28"><input type="text" value="3" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="g1"><span id="tx61">X</span></td>
+<td align="center" id="g2"><span id="tx62">X</span></td>
+<td align="center" id="g3"><span id="tx63">X</span></td>
+<td align="center" id="g4"><span id="tx64">X</span></td>
+<td align="center" id="g5"><span id="tx65">X</span></td>
+<td align="center" id="g6"><span id="tx66">X</span></td>
+<td align="center" id="g7"><span id="tx67">X</span></td>
+<td align="center" id="g8"><span id="tx68">X</span></td>
+<td align="center" id="g9"><span id="tx69">X</span></td>
+<td align="center" id="g10"><span id="tx70">X</span></td>
+<td align="center" id="g11"><span id="tx131">X</span></td>
+<td align="center" id="g12"><span id="tx132">X</span></td>
+<td align="center" id="g13"><span id="tx133">X</span></td>
+<td align="center" id="g14"><span id="tx134">X</span></td>
+<td align="center" id="g15"><span id="tx135">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td29"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td30"><input type="text" value="3" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td31"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td32"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="h1"><span id="tx71">X</span></td>
+<td align="center" id="h2"><span id="tx72">X</span></td>
+<td align="center" id="h3"><span id="tx73">X</span></td>
+<td align="center" id="h4"><span id="tx74">X</span></td>
+<td align="center" id="h5"><span id="tx75">X</span></td>
+<td align="center" id="h6"><span id="tx76">X</span></td>
+<td align="center" id="h7"><span id="tx77">X</span></td>
+<td align="center" id="h8"><span id="tx78">X</span></td>
+<td align="center" id="h9"><span id="tx79">X</span></td>
+<td align="center" id="h10"><span id="tx80">X</span></td>
+<td align="center" id="h11"><span id="tx136">X</span></td>
+<td align="center" id="h12"><span id="tx137">X</span></td>
+<td align="center" id="h13"><span id="tx138">X</span></td>
+<td align="center" id="h14"><span id="tx139">X</span></td>
+<td align="center" id="h15"><span id="tx140">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td33"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td34"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td35"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td36"><input type="text" value="10" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="i1"><span id="tx81">X</span></td>
+<td align="center" id="i2"><span id="tx82">X</span></td>
+<td align="center" id="i3"><span id="tx83">X</span></td>
+<td align="center" id="i4"><span id="tx84">X</span></td>
+<td align="center" id="i5"><span id="tx85">X</span></td>
+<td align="center" id="i6"><span id="tx86">X</span></td>
+<td align="center" id="i7"><span id="tx87">X</span></td>
+<td align="center" id="i8"><span id="tx88">X</span></td>
+<td align="center" id="i9"><span id="tx89">X</span></td>
+<td align="center" id="i10"><span id="tx90">X</span></td>
+<td align="center" id="i11"><span id="tx141">X</span></td>
+<td align="center" id="i12"><span id="tx142">X</span></td>
+<td align="center" id="i13"><span id="tx143">X</span></td>
+<td align="center" id="i14"><span id="tx144">X</span></td>
+<td align="center" id="i15"><span id="tx145">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td37"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td38"><input type="text" value="3" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td39"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td40"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="j1"><span id="tx91">X</span></td>
+<td align="center" id="j2"><span id="tx92">X</span></td>
+<td align="center" id="j3"><span id="tx93">X</span></td>
+<td align="center" id="j4"><span id="tx94">X</span></td>
+<td align="center" id="j5"><span id="tx95">X</span></td>
+<td align="center" id="j6"><span id="tx96">X</span></td>
+<td align="center" id="j7"><span id="tx97">X</span></td>
+<td align="center" id="j8"><span id="tx98">X</span></td>
+<td align="center" id="j9"><span id="tx99">X</span></td>
+<td align="center" id="j10"><span id="tx100">X</span></td>
+<td align="center" id="j11"><span id="tx146">X</span></td>
+<td align="center" id="j12"><span id="tx147">X</span></td>
+<td align="center" id="j13"><span id="tx148">X</span></td>
+<td align="center" id="j14"><span id="tx149">X</span></td>
+<td align="center" id="j15"><span id="tx150">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td41"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td42"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td43"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td44"><input type="text" value="7" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="k1"><span id="tx151">X</span></td>
+<td align="center" id="k2"><span id="tx152">X</span></td>
+<td align="center" id="k3"><span id="tx153">X</span></td>
+<td align="center" id="k4"><span id="tx154">X</span></td>
+<td align="center" id="k5"><span id="tx155">X</span></td>
+<td align="center" id="k6"><span id="tx156">X</span></td>
+<td align="center" id="k7"><span id="tx157">X</span></td>
+<td align="center" id="k8"><span id="tx158">X</span></td>
+<td align="center" id="k9"><span id="tx159">X</span></td>
+<td align="center" id="k10"><span id="tx160">X</span></td>
+<td align="center" id="k11"><span id="tx161">X</span></td>
+<td align="center" id="k12"><span id="tx162">X</span></td>
+<td align="center" id="k13"><span id="tx163">X</span></td>
+<td align="center" id="k14"><span id="tx164">X</span></td>
+<td align="center" id="k15"><span id="tx165">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td45"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td46"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td47"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td48"><input type="text" value="4" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="l1"><span id="tx166">X</span></td>
+<td align="center" id="l2"><span id="tx167">X</span></td>
+<td align="center" id="l3"><span id="tx168">X</span></td>
+<td align="center" id="l4"><span id="tx169">X</span></td>
+<td align="center" id="l5"><span id="tx170">X</span></td>
+<td align="center" id="l6"><span id="tx171">X</span></td>
+<td align="center" id="l7"><span id="tx172">X</span></td>
+<td align="center" id="l8"><span id="tx173">X</span></td>
+<td align="center" id="l9"><span id="tx174">X</span></td>
+<td align="center" id="l10"><span id="tx175">X</span></td>
+<td align="center" id="l11"><span id="tx176">X</span></td>
+<td align="center" id="l12"><span id="tx177">X</span></td>
+<td align="center" id="l13"><span id="tx178">X</span></td>
+<td align="center" id="l14"><span id="tx179">X</span></td>
+<td align="center" id="l15"><span id="tx180">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td49"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td50"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td51"><input type="text" value="2" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td52"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="m1"><span id="tx181">X</span></td>
+<td align="center" id="m2"><span id="tx182">X</span></td>
+<td align="center" id="m3"><span id="tx183">X</span></td>
+<td align="center" id="m4"><span id="tx184">X</span></td>
+<td align="center" id="m5"><span id="tx185">X</span></td>
+<td align="center" id="m6"><span id="tx186">X</span></td>
+<td align="center" id="m7"><span id="tx187">X</span></td>
+<td align="center" id="m8"><span id="tx188">X</span></td>
+<td align="center" id="m9"><span id="tx189">X</span></td>
+<td align="center" id="m10"><span id="tx190">X</span></td>
+<td align="center" id="m11"><span id="tx200">X</span></td>
+<td align="center" id="m12"><span id="tx201">X</span></td>
+<td align="center" id="m13"><span id="tx202">X</span></td>
+<td align="center" id="m14"><span id="tx203">X</span></td>
+<td align="center" id="m15"><span id="tx204">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td53"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td54"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td55"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td56"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="n1"><span id="tx205">X</span></td>
+<td align="center" id="n2"><span id="tx206">X</span></td>
+<td align="center" id="n3"><span id="tx207">X</span></td>
+<td align="center" id="n4"><span id="tx208">X</span></td>
+<td align="center" id="n5"><span id="tx209">X</span></td>
+<td align="center" id="n6"><span id="tx210">X</span></td>
+<td align="center" id="n7"><span id="tx211">X</span></td>
+<td align="center" id="n8"><span id="tx212">X</span></td>
+<td align="center" id="n9"><span id="tx213">X</span></td>
+<td align="center" id="n10"><span id="tx214">X</span></td>
+<td align="center" id="n11"><span id="tx215">X</span></td>
+<td align="center" id="n12"><span id="tx216">X</span></td>
+<td align="center" id="n13"><span id="tx217">X</span></td>
+<td align="center" id="n14"><span id="tx218">X</span></td>
+<td align="center" id="n15"><span id="tx219">X</span></td>
+</tr>
+
+<tr>
+<td align="center" id="td57"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td58"><input type="text" value="" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td59"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+<td align="center" id="td60"><input type="text" value="1" readonly="readonly" size="1mm" class="intx1"/></td>
+
+<td align="center" id="o1"><span id="tx220">X</span></td>
+<td align="center" id="o2"><span id="tx221">X</span></td>
+<td align="center" id="o3"><span id="tx222">X</span></td>
+<td align="center" id="o4"><span id="tx223">X</span></td>
+<td align="center" id="o5"><span id="tx224">X</span></td>
+<td align="center" id="o6"><span id="tx225">X</span></td>
+<td align="center" id="o7"><span id="tx226">X</span></td>
+<td align="center" id="o8"><span id="tx227">X</span></td>
+<td align="center" id="o9"><span id="tx228">X</span></td>
+<td align="center" id="o10"><span id="tx229">X</span></td>
+<td align="center" id="o11"><span id="tx230">X</span></td>
+<td align="center" id="o12"><span id="tx231">X</span></td>
+<td align="center" id="o13"><span id="tx232">X</span></td>
+<td align="center" id="o14"><span id="tx233">X</span></td>
+<td align="center" id="o15"><span id="tx234">X</span></td>
+</tr>
+
+</table>
+<p></p>
+<br />
+</body>
+</html>
